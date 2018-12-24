@@ -2,7 +2,7 @@
 
 Query Boardwalk REST API and retrieve UTXOs and current balance of the logged in user.
 
-#### Instructions
+### Instructions
 1. Clone repository
     ```sh
     $ https://github.com/mrahul16/utxo-balance-boardwalk.git
@@ -20,3 +20,11 @@ Query Boardwalk REST API and retrieve UTXOs and current balance of the logged in
     $ npm run build
     ```
 5. Open `index.html` in any ES6 compatible browser.
+
+### Screenshots
+Login
+<img src="login.png" alt="Login"/>
+
+
+UTXO Details
+<img src="main.png" alt="UTXO Details"/>
