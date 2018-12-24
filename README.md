@@ -23,8 +23,8 @@ Query Boardwalk REST API and retrieve UTXOs and current balance of the logged in
 
 ### Screenshots
 Login
-<img src="login.png" alt="Login"/>
+<img src="/screenshots/login.png" alt="Login"/>
 
 
 UTXO Details
-<img src="main.png" alt="UTXO Details"/>
+<img src="/screenshots/main.png" alt="UTXO Details"/>
