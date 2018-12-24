@@ -1,0 +1,182 @@
+body {
+    text-align: center;
+    background-color: #263238;
+}
+
+#login-header {
+    padding-top: 16px;
+    color: #FFF;
+}
+
+#login-header-course {
+    font-size: 1.6em;
+    font-weight: 300;
+}
+
+#login-header-code {
+    font-weight: 100;
+}
+
+#login-header-assignment {
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+#login-main {
+    /*display: inline-block;*/
+    /*width: 30%;*/
+    text-align: left;
+    padding: 16px 16px 0;
+    margin-top: 16px;
+}
+
+#login-main > .row {
+    margin-bottom: 0;
+}
+
+#login-main-header {
+    margin: 0;
+    padding-bottom: 16px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+#login-form {
+    margin-bottom: 20px;
+}
+
+.progress {
+    margin: 0;
+}
+
+.input-field.col label {
+     left: 0;
+}
+
+form {
+    padding: 0 !important;
+}
+
+nav {
+    padding-left: 10px;
+    text-align: left;
+}
+
+#nav-brand {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #3F51B5;
+    height: 48px !important;
+    line-height: 48px !important;
+}
+
+.navbar-fixed {
+    height: 48px !important;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+    height: 48px;
+    line-height: 48px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+main {
+    /*display: inline-block;*/
+    /*width: 50%;*/
+    text-align: left;
+    padding: 0 !important;
+}
+
+#profile {
+    padding: 1.4em 1.4em 1em;
+}
+
+#profile-name {
+    font-size: 1.4em;
+}
+
+#name-email-separator {
+    border-left: 1px solid #999;
+    font-size: 1.2em;
+    margin: 0 16px;
+}
+
+#profile-email {
+
+}
+
+#balance {
+    display: flex;
+    flex-direction: row;
+    color: #FFF;
+    font-weight: 100;
+}
+
+#balance-text {
+    flex-grow: 1;
+    font-size: 1.8em;
+    padding: 12px 0 12px 16px;
+}
+
+#balance-amt {
+    font-size: 1.8em;
+    padding: 12px 16px 12px 12px;
+    color: #ffab40;
+}
+
+#utxo {}
+
+#utxo-header {
+    margin: 16px;
+    /*padding-bottom: 12px;*/
+    /*border-bottom: 1px solid #ddd;*/
+}
+
+#utxo-description {
+    padding: 4px 16px 20px;
+}
+
+#utxo-details-container {
+    padding: 0 0 16px;
+}
+
+.txactive {
+    color: #43a047;
+}
+
+.txinactive {
+    color: #c62828;
+}
+
+/*@media only screen and (min-width: 0) {*/
+/*.navbar-fixed {*/
+/*height: 48px !important;*/
+/*}*/
+/*}*/
+
+@media only screen and (max-width: 600px) {
+    #toast-container {
+        min-width: 100%;
+        bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 601px) and (min-width: 993px) {
+    #toast-container {
+        /*right: 0;*/
+        /*left: 0;*/
+
+        top: unset;
+        right: unset;
+        bottom: 7%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 86%;
+    }
+}

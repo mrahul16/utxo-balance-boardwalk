@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boardwalk API UTXO client</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="dist/css/index.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+<div id="login-container">
+    <div id="login-header">
+        <div id="login-header-course">
+            Design of Bitcoin and Blockchain Systems
+        </div>
+        <div id="login-header-code">
+            ( UE15CS434 )
+        </div>
+        <div id="login-header-assignment">
+            Assignment
+        </div>
+    </div>
+    <div class="row container">
+        <div id="login-main" class="card col s12 offset-m2 m8 offset-l3 l6">
+
+            <h6 id="login-main-header">Login</h6>
+            <div class="divider"></div>
+            <form id="login-form" class="col s12 center-align">
+                <div class="input-field">
+                    <input id="email" type="text">
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field">
+                    <input id="password" type="password">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field">
+                    <input disabled value="BW_PES_Assignment_Group1" id="group" type="text" class="validate">
+                    <label for="group">Group</label>
+                </div>
+                <div class="input-field">
+                    <input disabled value="ROOT" id="neighbourhood" type="text" class="validate">
+                    <label for="neighbourhood">Neighbourhood</label>
+                </div>
+                <button id="login-submit" class="btn waves-effect waves-light" type="button">
+                    ₿ Login ₿
+                </button>
+            </form>
+            <!--<div class="progress">-->
+                <!--<div class="indeterminate"></div>-->
+            <!--</div>-->
+        </div>
+
+    </div>
+</div>
+
+<div class="navbar-fixed hide">
+    <nav class="blue-grey darken-3">
+        <div class="nav-wrapper">
+            <a id="nav-brand" href="#" class="brand-logo">utxo-balance-boardwalk</a>
+            <ul class="right hide-on-med-and-down">
+                <li><a class="logout">Logout</a></li>
+            </ul>
+            <ul class="right show-on-med-and-down hide-on-large-only">
+                <li>
+                    <!-- Dropdown Trigger -->
+                    <a class='dropdown-trigger' href='#' data-target='dropdown1'>
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- Dropdown Structure -->
+<ul id='dropdown1' class='dropdown-content'>
+    <li><a class="logout">Logout</a></li>
+</ul>
+
+<!--<a onclick="M.toast({html: 'I am a toast', displayLength: 600000})" class="btn">Toast!</a>-->
+<div class="row container">
+    <main class="card col s12 offset-m1 m10 offset-l2 l8 hide">
+        <div id="profile">
+            <span id="profile-name" class="inline-block"></span>
+            <span id="name-email-separator"></span>
+            <span id="profile-email" class="inline-block"></span>
+        </div>
+        <div id="balance" class="blue-grey darken-2">
+            <span id="balance-text">Your current balance</span>
+            <span id="balance-amt"></span>
+        </div>
+        <div id="utxo">
+            <h5 id="utxo-header">Your UTXOs</h5>
+            <div id="utxo-details-container">
+                <table id="utxo-details" class="highlight centered">
+                    <thead>
+                    <tr>
+                        <th>TX_ID</th>
+                        <th>AMOUNT</th>
+                        <th>ACTIVE</th>
+                    </tr>
+                    </thead>
+
+                    <tbody id="utxo-table-body"></tbody>
+                </table>
+            </div>
+            <div id="utxo-description"></div>
+        </div>
+    </main>
+</div>
+<script src="dist/js/bundle.js"></script>
+</body>
+</html>

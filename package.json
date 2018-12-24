@@ -1,0 +1,26 @@
+{
+  "name": "utxo-balance-boardwalk",
+  "version": "1.0.0",
+  "description": "Boardwalk API client to check UTXO details of users",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "cd src && browserify index.js -o ../dist/js/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrahul16/utxo-balance-boardwalk.git"
+  },
+  "author": "Rahul Mohan",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/mrahul16/utxo-balance-boardwalk/issues"
+  },
+  "homepage": "https://github.com/mrahul16/utxo-balance-boardwalk#readme",
+  "devDependencies": {
+    "browserify": "^16.2.3"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}
